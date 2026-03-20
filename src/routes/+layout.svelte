@@ -1,11 +1,22 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-
-	let { children } = $props();
+    import '$lib/style.css'
+    import Footer from '../lib/Footer.svelte';
+    import Header from '../lib/Header.svelte';
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<div class="wrapper">
+<Header />
+<main>
+    <slot></slot>
+</main>
 
-{@render children()}
+<Footer />
+</div>
+
+<style>
+.wrapper {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+</style>
