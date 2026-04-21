@@ -3,7 +3,7 @@ let {
     heading,
     src,
     description = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, magni.",
-    
+    href
 } = $props()
 </script>
 
@@ -11,7 +11,7 @@ let {
 <img {src} alt="">
 <h3>heading</h3>
 <p>{description}</p>
-<a href="">Read More &raquo;</a>
+<a {href}>Read More &raquo;</a>
 </div>
 
 <style>

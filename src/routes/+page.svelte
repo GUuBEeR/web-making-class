@@ -20,7 +20,7 @@
 </section>
 
 <style>
-    .inner{
+    .inner {
         padding-block: 8rem;
     }
 </style>
