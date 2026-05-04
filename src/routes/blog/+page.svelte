@@ -11,7 +11,7 @@ export let data
 
 			{#each data.posts.posts as post}
 				<div class="flow">
-				<img src="{post.featured_image}" alt="{post.title}">
+				<a href="/blog/{post.slug}"><img src="{post.featured_image}" alt="{post.title}"></a>
 				<h2><a href="/blog/{post.slug}">{@html post.title}</a></h2>
 				<p>{@html post.excerpt}</p>
 			</div>
@@ -20,3 +20,10 @@ export let data
 		</div>
 	</div>
 </section>
+
+<style>
+	img {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+	}
+</style>
