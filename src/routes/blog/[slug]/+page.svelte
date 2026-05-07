@@ -9,7 +9,7 @@
 <section>
     <div class="outer">
         <div class="inner">
-            <img src="{date.post.featured_image}" alt="{data.post.title}">
+            <img src="{data.post.featured_image}" alt="{data.post.title}">
         </div>
     </div>
 </section>
