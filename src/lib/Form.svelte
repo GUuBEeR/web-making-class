@@ -61,6 +61,7 @@ label {
 }
 
 input, textarea {
+    min-width: 0;
     padding: 1rem;
     font: inherit;
 }
